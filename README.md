@@ -18,53 +18,57 @@ Position Management: Maintain different job positions available within the organ
 Salary Management: Keep track of salary details for various positions, including basic salary, allowances, and gross salary calculations.
 
 # Technologies Used
-Java 8
-Spring Boot 2.7.14
-Spring Data JPA
-MySQL Database
-ModelMapper
-Lombok
-Maven
+* Java 8
+* Spring Boot 2.7.14
+* Spring Data JPA
+* MySQL Database
+* ModelMapper
+* Lombok
+* Maven
 
 # Getting Started
-Make sure you have Java 8 or higher installed on your machine.
-Set up a MySQL database and configure the database connection in application.properties.
-Clone this repository to your local machine.
-Build and run the application using Maven.
+* Make sure you have Java 8 or higher installed on your machine.
+* Set up a MySQL database and configure the database connection in application.properties.
+* Clone this repository to your local machine.
+* Build and run the application using Maven.
 
 # Usage
 The HR Department Management System provides a set of API endpoints to perform various operations on employee, attendance, department, position, and salary data.
 
 # API Endpoints
-Employee Management:
+* Employee Management:
 
 /api/employees: GET - Retrieve a list of all employees.
 /api/employees/{id}: GET - Retrieve an employee by ID.
 /api/employees: POST - Create a new employee.
 /api/employees/{id}: PUT - Update an existing employee.
 /api/employees/{id}: DELETE - Delete an employee by ID.
-Attendance Tracking:
+
+* Attendance Tracking:
 
 /api/attendances: GET - Retrieve a list of all attendance records.
 /api/attendances/{id}: GET - Retrieve an attendance record by ID.
 /api/attendances: POST - Create a new attendance record.
 /api/attendances/{id}: PUT - Update an existing attendance record.
 /api/attendances/{id}: DELETE - Delete an attendance record by ID.
-Department Management:
+
+* Department Management:
 
 /api/departments: GET - Retrieve a list of all departments.
 /api/departments/{id}: GET - Retrieve a department by ID.
 /api/departments: POST - Create a new department.
 /api/departments/{id}: PUT - Update an existing department.
 /api/departments/{id}: DELETE - Delete a department by ID.
-Position Management:
+
+* Position Management:
 
 /api/positions: GET - Retrieve a list of all positions.
 /api/positions/{id}: GET - Retrieve a position by ID.
 /api/positions: POST - Create a new position.
 /api/positions/{id}: PUT - Update an existing position.
 /api/positions/{id}: DELETE - Delete a position by ID.
-Salary Management:
+
+* Salary Management:
 
 /api/salaries: GET - Retrieve a list of all salaries.
 /api/salaries/{id}: GET - Retrieve a salary by ID.
@@ -72,11 +76,9 @@ Salary Management:
 /api/salaries/{id}: PUT - Update an existing salary record.
 /api/salaries/{id}: DELETE - Delete a salary record by ID.
 
-# Database Configuration
-Configure the database connection in application.properties:
-
-properties
-Copy code
+# Mysql Database Configuration
+* Configure the database connection in application.properties:
+* 
 spring.datasource.url=jdbc:mysql://localhost:3306/your_database_name
 spring.datasource.username=your_database_username
 spring.datasource.password=your_database_password
